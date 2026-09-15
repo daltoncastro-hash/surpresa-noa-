@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uma mensagem especial para ti 💜</title>
+    <link rel="stylesheet" href="Css/Supresa.css">
+</head>
+<body>
+    <div class="particulas"></div>
+
+    <main>
+        <!-- SECÇÃO 1: Introdução -->
+        <section class="introducao ativa" id="sec1">
+            <h2>Olá, Noa ✨</h2>
+            <p>
+                Preparei algo especial para ti.<br>
+                Porque há pessoas que merecem saber o quanto são importantes.
+            </p>
+            <button onclick="proximaSecao(2)" class="btn">Continuar</button>
+        </section>
+
+        <!-- SECÇÃO 2: Coisas que gosto -->
+        <section class="sobre" id="sec2">
+            <h2>Coisas que eu adoro em ti 💜</h2>
+            
+            <div class="grid-cards">
+                <div class="card">
+                    <div class="icone">😊</div>
+                    <h3>O teu sorriso</h3>
+                    <p>Que ilumina qualquer dia cinzento</p>
+                </div>
+
+                <div class="card">
+                    <div class="icone">💬</div>
+                    <h3>As nossas conversas</h3>
+                    <p>Posso falar contigo sobre tudo</p>
+                </div>
+
+                <div class="card">
+                    <div class="icone">✨</div>
+                    <h3>A tua energia</h3>
+                    <p>Contagiante e única</p>
+                </div>
+
+                <div class="card">
+                    <div class="icone">🎵</div>
+                    <h3>O teu gosto musical</h3>
+                    <p>Sempre me fazes descobrir coisas novas</p>
+                </div>
+
+                <div class="card">
+                    <div class="icone">🤗</div>
+                    <h3>A forma como te preocupas</h3>
+                    <p>Com as pessoas que amas</p>
+                </div>
+
+                <div class="card">
+                    <div class="icone">🌟</div>
+                    <h3>A tua autenticidade</h3>
+                    <p>Sempre verdadeira e genuína</p>
+                </div>
+            </div>
+
+            <button onclick="proximaSecao(3)" class="btn">Continuar</button>
+        </section>
+
+        <!-- SECÇÃO 3: Pequenos detalhes -->
+        <section class="detalhes" id="sec3">
+            <h2>Pequenos detalhes que me fazem sorrir 🌸</h2>
+            
+            <div class="lista-detalhes">
+                <div class="detalhe">
+                    <span class="numero">01</span>
+                    <p>A forma como ris das coisas mais aleatórias</p>
+                </div>
+                <div class="detalhe">
+                    <span class="numero">02</span>
+                    <p>Quando me mandas aquelas mensagens do nada</p>
+                </div>
+                <div class="detalhe">
+                    <span class="numero">03</span>
+                    <p>A tua capacidade de me animar quando estou em baixo</p>
+                </div>
+                <div class="detalhe">
+                    <span class="numero">04</span>
+                    <p>As histórias malucas que só tu tens</p>
+                </div>
+                <div class="detalhe">
+                    <span class="numero">05</span>
+                    <p>O facto de seres tu... simplesmente tu</p>
+                </div>
+            </div>
+
+            <button onclick="proximaSecao(4)" class="btn">Continuar</button>
+        </section>
+
+        <!-- SECÇÃO 4: Jogo - Adivinhar -->
+        <section class="jogo" id="sec4">
+            <h2>Um pequeno jogo 🎮</h2>
+            <p>Tenta adivinhar: Qual é o teu superpoder secreto?</p>
+            
+            <div class="opcoes-jogo">
+                <button onclick="respostaErrada(this)" class="opcao">Invisibilidade</button>
+                <button onclick="respostaErrada(this)" class="opcao">Super força</button>
+                <button onclick="respostaCerta()" class="opcao">Fazer as pessoas felizes</button>
+                <button onclick="respostaErrada(this)" class="opcao">Voar</button>
+            </div>
+
+            <div id="resposta-jogo" class="resposta-jogo"></div>
+        </section>
+
+        <!-- SECÇÃO 5: Se estivesses aqui -->
+        <section class="imaginacao" id="sec5">
+            <h2>Se estivesses aqui agora... 💭</h2>
+            
+            <div class="cenario">
+                <p class="texto-imaginacao">
+                    Estaríamos a rir-nos de algo estúpido,<br>
+                    a ouvir música alta demais,<br>
+                    a fazer planos malucos que talvez nunca aconteçam...<br><br>
+                    Mas que são perfeitos exatamente assim. ✨
+                </p>
+                
+                <div class="ilustracao">
+                    <div class="pessoa">🧑</div>
+                    <div class="coracao-meio">💜</div>
+                    <div class="pessoa">👤</div>
+                </div>
+            </div>
+
+            <button onclick="proximaSecao(6)" class="btn">Continuar</button>
+        </section>
+
+        <!-- SECÇÃO 6: Mensagem Final -->
+        <section class="final" id="sec6">
+            <h2>Uma mensagem para ti 💌</h2>
+            
+            <div class="carta">
+                <p>
+                    Noa,<br><br>
+                    
+                    Quis fazer isto porque és uma pessoa incrível.<br>
+                    Não apenas para mim, mas para todos à tua volta.<br><br>
+                    
+                    Às vezes esquecemo-nos de dizer às pessoas<br>
+                    o quanto são especiais...<br><br>
+                    
+                    Então aqui está:<br>
+                    <strong>Tu és especial. Tu importas. Tu fazes a diferença.</strong><br><br>
+                    
+                    Obrigado por seres quem és. 💜
+                </p>
+            </div>
+
+            <button onclick="revelaSurpresa()" class="btn-especial" id="btn-surpresa">
+                Tenho mais uma coisa para te mostrar ✨
+            </button>
+
+            <div class="surpresa-final" id="surpresa">
+                <div class="explosao-coracoes">
+                    💜✨💖🌟💫⭐💜✨💖🌟💫⭐
+                </div>
+                <h3>Nunca te esqueças:</h3>
+                <p class="mensagem-grande">
+                    TU ÉS INCRÍVEL! 🌟
+                </p>
+                <a href="Home.html" class="btn">Voltar ao início</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="JS/supresa.js"></script>
+</body>
+</html>
